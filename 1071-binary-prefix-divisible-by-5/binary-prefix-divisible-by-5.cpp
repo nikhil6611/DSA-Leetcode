@@ -4,7 +4,7 @@ public:
         vector<bool>answer(nums.size());
         int x=0;
         for(int i=0;i<nums.size();i++){
-            x= ((x<<1) +nums[i])%5;
+            x= ((x*2) +nums[i])%5;
             if(x==0){
                 answer[i]=true;
             }
